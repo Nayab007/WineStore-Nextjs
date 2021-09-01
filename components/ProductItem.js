@@ -1,12 +1,4 @@
-import {
-  Button,
-  Card,
-  CardActionArea,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-} from '@material-ui/core';
+import {Button,  Card,  CardActionArea,  CardActions,CardContent,CardMedia,Typography,} from '@material-ui/core';
 import React from 'react';
 import NextLink from 'next/link';
 import Rating from '@material-ui/lab/Rating';
