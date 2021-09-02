@@ -32,7 +32,7 @@ export default function Payment() {
     } else {
       setPaymentMethod(Cookies.get('paymentMethod') || '');
     }
-  }, []);
+  }, [router , shippingAddress]);
   const submitHandler = (e) => {
     closeSnackbar();
     e.preventDefault();
@@ -71,8 +71,8 @@ export default function Payment() {
                   control={<Radio />}
                 ></FormControlLabel>
                 <FormControlLabel
-                  label="Bank Transfer"
-                  value="Bank tansfer"
+                  label="Cash on Delivery"
+                  value="Cash On delivery"
                   control={<Radio />}
                 ></FormControlLabel>
               </RadioGroup>

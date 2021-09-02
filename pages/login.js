@@ -33,7 +33,7 @@ export default function Login() {
     if (userInfo) {
       router.push('/');
     }
-  }, []);
+  }, [userInfo, router]);
 
   const classes = useStyles();
   const submitHandler = async ({ email, password }) => {
@@ -121,7 +121,7 @@ export default function Login() {
             </Button>
           </ListItem>
           <ListItem>
-            Don&apos;t have an account? &nbsp;
+            Open new account &nbsp;
             <NextLink href={`/register?redirect=${redirect || '/'}`} passHref>
               <Link>Register</Link>
             </NextLink>

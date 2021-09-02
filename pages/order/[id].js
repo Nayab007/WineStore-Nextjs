@@ -128,14 +128,14 @@ function Order({ params }) {
           type: 'resetOptions',
           value: {
             'client-id': clientId,
-            currency: 'USD',
+            currency: 'SEK',
           },
         });
         paypalDispatch({ type: 'setLoadingStatus', value: 'pending' });
       };
       loadPaypalScript();
     }
-  }, [order, successPay, successDeliver]);
+  }, [orderId, paypalDispatch, router, userInfo, order._id , successPay, successDeliver]);
   const { enqueueSnackbar } = useSnackbar();
 
   function createOrder(data, actions) {

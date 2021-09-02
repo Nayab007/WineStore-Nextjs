@@ -20,7 +20,7 @@ export default function Shipping() {
     control,
     formState: { errors },
     setValue,
-    getValues,
+    //getValues,
   } = useForm();
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
@@ -38,7 +38,7 @@ export default function Shipping() {
     setValue('city', shippingAddress.city);
     setValue('postalCode', shippingAddress.postalCode);
     setValue('country', shippingAddress.country);
-  }, []);
+  }, [setValue, router, shippingAddress, userInfo]);
 
   const classes = useStyles();
   const submitHandler = ({ fullName, address, city, postalCode, country }) => {
