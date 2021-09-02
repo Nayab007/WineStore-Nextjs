@@ -62,7 +62,7 @@ function AdminDashboard() {
       }
     };
     fetchData();
-  }, []);
+  }, [userInfo, router]);
   return (
     <Layout title="Admin Dashboard">
       <Grid container spacing={1}>

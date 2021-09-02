@@ -65,7 +65,7 @@ function AdminOrders() {
       }
     };
     fetchData();
-  }, []);
+  }, [userInfo, router]);
   return (
     <Layout title="Orders">
       <Grid container spacing={1}>

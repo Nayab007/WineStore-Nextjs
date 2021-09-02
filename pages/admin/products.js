@@ -87,7 +87,7 @@ function AdminProdcuts() {
     } else {
       fetchData();
     }
-  }, [successDelete]);
+  }, [successDelete , userInfo, router]);
 
   const { enqueueSnackbar } = useSnackbar();
   const createHandler = async () => {

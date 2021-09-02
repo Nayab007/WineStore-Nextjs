@@ -80,7 +80,7 @@ function AdminUsers() {
     } else {
       fetchData();
     }
-  }, [successDelete]);
+  }, [successDelete, userInfo, router]);
 
   const { enqueueSnackbar } = useSnackbar();
 
@@ -152,7 +152,7 @@ function AdminUsers() {
                           <TableCell>ID</TableCell>
                           <TableCell>NAME</TableCell>
                           <TableCell>EMAIL</TableCell>
-                          <TableCell>ISADMIN</TableCell>
+                          <TableCell>IS ADMIN</TableCell>
                           <TableCell>ACTIONS</TableCell>
                         </TableRow>
                       </TableHead>
