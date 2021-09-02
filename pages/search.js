@@ -164,7 +164,7 @@ export default function Search(props) {
                 <Select value={rating} onChange={ratingHandler} fullWidth>
                   <MenuItem value="all">All</MenuItem>
                   {ratings.map((rating) => (
-                    <MenuItem dispaly="flex" key={rating} value={rating}>
+                    <MenuItem display="flex" key={rating} value={rating}>
                       <Rating value={rating} readOnly />
                       <Typography component="span">&amp; Up</Typography>
                     </MenuItem>
